@@ -16,7 +16,6 @@ def get_content(url):
     soup = BeautifulSoup(html_doc.text, 'html.parser')
     return soup
 
-
 def get_quote(soup):
     quote_list = []
     quote = soup.find_all('span', class_='text')
@@ -36,7 +35,7 @@ def get_quote(soup):
 
 def get_author(url):
     soup = get_content(url)
-    name = soup.find('h3', class_='author-title').text.strip()
+    name = soup.find('h3', class_='author-title').text.strip().replace("-", " ")
     born_date = soup.find('span', class_='author-born-date').text.strip()
     born_place = soup.find('span', class_='author-born-location').text.strip()
     description = (soup.find('div', class_='author-description').text.strip()).replace("\'", "'")

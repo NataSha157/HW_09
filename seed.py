@@ -18,11 +18,7 @@ if __name__ == '__main__':
 
     with open('quotes.json', encoding='utf-8') as fd:
         data = json.load(fd)
-        n=0
         for el in data:
             author, *_ = Author1.objects(fullname=el.get('author'))
-            print(n, author.fullname)
-            n+=1
             quote = Quote1(quote=el.get('quote'), tags=el.get('tags'), author=author)
-            print(el.get('tags'))
             quote.save()

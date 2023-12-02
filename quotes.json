@@ -9,13 +9,6 @@
     "author": "Albert Einstein",
     "quote": "“The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.”"
   },
-    {
-    "tags": [
-      ""
-    ],
-    "author": "J.K. Rowling",
-    "quote": "“It is impossible to live without failing at something, unless you live so cautiously that you might as well not have lived at all - in which case, you fail by default.”"
-  },
   {
     "tags": [
       "abilities",
@@ -247,6 +240,13 @@
     ],
     "author": "Albert Einstein",
     "quote": "“If you want your children to be intelligent, read them fairy tales. If you want them to be more intelligent, read them more fairy tales.”"
+  },
+  {
+    "tags": [
+      ""
+    ],
+    "author": "J.K. Rowling",
+    "quote": "“It is impossible to live without failing at something, unless you live so cautiously that you might as well not have lived at all - in which case, you fail by default.”"
   },
   {
     "tags": [
